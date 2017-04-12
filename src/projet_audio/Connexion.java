@@ -6,8 +6,11 @@ public class Connexion {
 	
 	public Connexion (CommunicationPort up, CommunicationPort down)
 	{
-		upModulePort=up; // s 
-		downModulePort=down; // e
+		upModulePort=up; // sortie 
+		downModulePort=down; // entree
+		downModulePort.c=this;
+		upModulePort.c=this;
+		
 	}
 	
 	void communicate ()

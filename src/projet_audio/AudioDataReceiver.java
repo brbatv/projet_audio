@@ -36,6 +36,10 @@ public class AudioDataReceiver extends ModuleAbstract {
 		popo.play();
 	}
 	
+	public String toString() 
+	{
+		return "audiodata receiver, my name is " + this.nom;
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

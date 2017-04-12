@@ -21,10 +21,16 @@ public class GenSineBasic extends ModuleAbstract {
 	@Override
 	public void exec()
 	{double e=amp*sin(2*3.14*f*n/SAMPLE_FREQ);
+	System.out.println(e);
 	setAndSendOutputPortValue(0,e);
 	n=n+1;
 	}
 	
+	public String toString()
+	{
+		return "Frequence, amp, echantillon" + f + amp + n;
+		
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
